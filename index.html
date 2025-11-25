@@ -98,6 +98,24 @@
     .button:hover {
       background-color: #024ea4;
     }
+        /* Generic info card styling */
+    .info-card {
+      background: #ffffff;
+      padding: 20px 25px;
+      border-radius: 12px;
+      box-shadow: 0 3px 10px rgba(0,0,0,0.06);
+      border-left: 5px solid #444;
+      margin-top: 15px;
+    }
+    
+    /* Adjust section spacing */
+    section h2 {
+      font-size: 24px;
+      margin-bottom: 12px;
+      padding-bottom: 6px;
+      border-bottom: 2px solid #222;
+    }
+
 </style>
 
 </head>
@@ -114,22 +132,28 @@
   </header>
 
   <section id="about">
-    <h2>About Me</h2>
-    <p>Hi! I’m Deepthi — a backend developer who loves building APIs, mastering FastAPI, and solving DSA problems daily. With 4+ years of experience across Accenture and NTT DATA, I work at the intersection of backend systems, debugging, and data validation.</p>
-    <p>I recently completed my Master’s in Data Science at the University of Oklahoma and now focus on developing real-world backend services using Python, databases, and clean architecture.</p>
-  </section>
+  <h2>About Me</h2>
+  <div class="info-card">
+    <p>👋 Hi! I’m Deepthi — a backend developer who loves building scalable APIs, mastering FastAPI, and solving DSA problems daily.</p>
+    <p>With 4+ years of experience across Accenture and NTT DATA, I work at the intersection of backend systems, debugging, and data validation. I recently completed my Master’s in Data Science at the University of Oklahoma.</p>
+  </div>
+</section>
 
-  <section id="skills">
-    <h2>Skills</h2>
+
+ <section id="skills">
+  <h2>Skills</h2>
+  <div class="info-card">
     <ul>
-      <li>Backend: FastAPI, Flask, REST APIs</li>
-      <li>Programming: Python, SQL, Java (Basic)</li>
-      <li>Databases: PostgreSQL, MySQL</li>
-      <li>Data Engineering Basics: ETL, Pipelines, AWS S3</li>
-      <li>Tools: Docker, Git, VS Code, Postman</li>
-      <li>DSA: Trees, Binary Search, Recursion, Patterns (LeetCode 100+)</li>
+      <li>⚙️ <strong>Backend:</strong> FastAPI, Flask, REST APIs</li>
+      <li>💻 <strong>Programming:</strong> Python, SQL, Java (Basic)</li>
+      <li>🗄️ <strong>Databases:</strong> PostgreSQL, MySQL</li>
+      <li>📦 <strong>Data Engineering:</strong> ETL, Pipelines, AWS S3</li>
+      <li>🛠️ <strong>Tools:</strong> Docker, Git, VS Code, Postman</li>
+      <li>🌳 <strong>DSA:</strong> Trees, Binary Search, Recursion, Patterns (LeetCode 100+)</li>
     </ul>
-  </section>
+  </div>
+</section>
+
 
   <section id="projects">
   <h2>Projects</h2>
@@ -180,20 +204,25 @@
 </section>
 
 
-  <section id="certifications">
-    <h2>Certifications</h2>
+ <section id="certifications">
+  <h2>Certifications</h2>
+  <div class="info-card">
     <ul>
-      <li>Supervised Machine Learning — Coursera</li>
-      <li>SQL (Advanced) — HackerRank</li>
-      <li>Python (Basic) — HackerRank</li>
-      <li>Google Data Analytics</li>
+      <li>📘 Supervised Machine Learning — Coursera</li>
+      <li>📝 SQL (Advanced) — HackerRank</li>
+      <li>🐍 Python (Basic) — HackerRank</li>
+      <li>📊 Google Data Analytics</li>
     </ul>
-  </section>
+  </div>
+</section>
 
-  <section id="contact">
-    <h2>Contact</h2>
-    <p>Email: <a href="mailto:yekkantideepthi@gmail.com">yekkantideepthi@gmail.com</a></p>
-    <p>LinkedIn: <a href="https://www.linkedin.com/in/deepthiyekkanti">linkedin.com/in/deepthiyekkanti</a></p>
-  </section>
-</body>
-</html>
+
+ <section id="contact">
+  <h2>Contact</h2>
+  <div class="info-card">
+    <p>📩 Email: <a href="mailto:yekkantideepthi@gmail.com">yekkantideepthi@gmail.com</a></p>
+    <p>🔗 LinkedIn: <a href="https://www.linkedin.com/in/deepthiyekkanti">linkedin.com/in/deepthiyekkanti</a></p>
+    <p>💻 GitHub: <a href="https://github.com/deepthiyekkanti">github.com/deepthiyekkanti</a></p>
+    <p>🧩 LeetCode: <a href="https://leetcode.com/u/yekkantideepthi/">leetcode.com/u/yekkantideepthi/</a></p>
+  </div>
+</section>
