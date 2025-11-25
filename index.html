@@ -12,20 +12,25 @@
       line-height: 1.6;
       background: #f9f9f9;
     }
+
     header {
       text-align: center;
       margin-bottom: 40px;
     }
+
     h1 {
       margin-bottom: 10px;
     }
+
     section {
       margin-bottom: 40px;
     }
+
     h2 {
       border-bottom: 2px solid #333;
       padding-bottom: 5px;
     }
+
     a {
       color: #0366d6;
       text-decoration: none;
@@ -33,7 +38,42 @@
     a:hover {
       text-decoration: underline;
     }
-  </style>
+
+    /* ⭐ Modern Project Card Styling */
+    .project-card {
+      background: #ffffff;
+      padding: 20px;
+      border-radius: 12px;
+      margin-bottom: 25px;
+      box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+    }
+
+    .project-card h3 {
+      margin-top: 0;
+      margin-bottom: 10px;
+    }
+
+    .project-card p {
+      margin-bottom: 15px;
+      line-height: 1.5;
+    }
+
+    .button {
+      display: inline-block;
+      padding: 8px 16px;
+      background-color: #0366d6;
+      color: white;
+      text-decoration: none;
+      border-radius: 6px;
+      font-size: 14px;
+      transition: background 0.2s ease-in-out;
+    }
+
+    .button:hover {
+      background-color: #024ea4;
+    }
+</style>
+
 </head>
 <body>
   <header>
@@ -66,27 +106,27 @@
   </section>
 
   <section id="projects">
-    <h2>Projects</h2>
-    <ul>
-      <li>
-        <strong>Task Manager API (FastAPI):</strong>
-        Full CRUD backend API using FastAPI + Pydantic — 
-        <a href="https://github.com/deepthiyekkanti/task_manager_api" target="_blank">View Project</a>
-      </li>
+  <h2>Projects</h2>
 
-      <li>
-        <strong>ETL Data Sync Pipeline:</strong>
-        Python batch job syncing MySQL ↔ S3 with retry logic — 
-        <a href="#">View Project</a>
-      </li>
+  <div class="project-card">
+    <h3>Task Manager API (FastAPI)</h3>
+    <p>Full CRUD backend API built with FastAPI and Pydantic. Supports task creation, retrieval, update, and deletion with clean routing and data validation.</p>
+    <a class="button" href="https://github.com/deepthiyekkanti/task_manager_api" target="_blank">View on GitHub</a>
+  </div>
 
-      <li>
-        <strong>URL Shortener Service:</strong>
-        Redis caching, rate limiting, analytics — 
-        <a href="#">View Project</a>
-      </li>
-    </ul>
+  <div class="project-card">
+    <h3>ETL Data Sync Pipeline</h3>
+    <p>Automated ETL pipeline that syncs MySQL data to AWS S3 with retry logic, batching, and consistency checks.</p>
+    <a class="button" href="#">View Project</a>
+  </div>
+
+  <div class="project-card">
+    <h3>URL Shortener Service</h3>
+    <p>High-performance URL shortener with Redis caching, rate limiting, analytics tracking, and FastAPI backend.</p>
+    <a class="button" href="#">View Project</a>
+  </div>
 </section>
+
 
 
   <section id="certifications">
