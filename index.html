@@ -2,7 +2,8 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>Deepthi Yekkanti | Portfolio</title>
+  <title>Deepthi Yekkanti | Backend Portfolio</title>
+
   <style>
     body {
       font-family: Arial, sans-serif;
@@ -11,6 +12,7 @@
       padding: 40px;
       line-height: 1.6;
       background: #f9f9f9;
+      color: #222;
     }
 
     header {
@@ -19,12 +21,13 @@
     }
 
     h1 {
-      margin-bottom: 10px;
+      margin-bottom: 8px;
     }
 
     h2 {
       border-bottom: 2px solid #333;
-      padding-bottom: 5px;
+      padding-bottom: 6px;
+      margin-bottom: 20px;
     }
 
     section {
@@ -35,194 +38,146 @@
       color: #0366d6;
       text-decoration: none;
     }
+
     a:hover {
       text-decoration: underline;
     }
 
-    /* ⭐ Modern Project Card Styling */
-    .project-card {
+    /* Info blocks */
+    .info-card {
       background: #ffffff;
-      padding: 25px;
-      border-radius: 14px;
-      margin-bottom: 30px;
-      box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
-      border-left: 5px solid #0366d6;
-      transition: transform 0.25s ease, box-shadow 0.25s ease;
+      padding: 20px 24px;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.06);
     }
 
-    .project-card:hover {
-      transform: translateY(-5px);
-      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+    /* Project cards */
+    .project-card {
+      background: #ffffff;
+      padding: 22px 24px;
+      border-radius: 8px;
+      margin-bottom: 25px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+      border-left: 4px solid #0366d6;
     }
 
     .project-card h3 {
-      display: flex;
-      align-items: center;
-      gap: 10px;
       margin-top: 0;
+      margin-bottom: 8px;
+    }
+
+    .tech {
+      font-size: 13px;
+      color: #555;
       margin-bottom: 10px;
     }
 
-    /* ⭐ Badge styling */
-    .badge {
-      display: inline-block;
-      padding: 4px 10px;
-      margin-right: 6px;
-      margin-bottom: 6px;
-      background: #e8f0fe;
-      color: #1a73e8;
-      border-radius: 20px;
-      font-size: 12px;
-      font-weight: 600;
+    .status {
+      font-size: 13px;
+      font-style: italic;
+      color: #777;
+      margin-top: 6px;
     }
 
-    /* ⭐ Small tech icons */
-    .icon {
-      width: 18px;
-      vertical-align: middle;
-      border-radius: 4px;
-    }
-
-    /* ⭐ GitHub Button */
     .button {
       display: inline-block;
-      padding: 10px 16px;
+      margin-top: 10px;
+      padding: 8px 14px;
       background-color: #0366d6;
       color: white;
-      text-decoration: none;
-      border-radius: 6px;
+      border-radius: 4px;
       font-size: 14px;
-      transition: background 0.2s ease-in-out;
     }
 
     .button:hover {
       background-color: #024ea4;
     }
-        /* Generic info card styling */
-    .info-card {
-      background: #ffffff;
-      padding: 20px 25px;
-      border-radius: 12px;
-      box-shadow: 0 3px 10px rgba(0,0,0,0.06);
-      border-left: 5px solid #444;
-      margin-top: 15px;
-    }
-    
-    /* Adjust section spacing */
-    section h2 {
-      font-size: 24px;
-      margin-bottom: 12px;
-      padding-bottom: 6px;
-      border-bottom: 2px solid #222;
-    }
 
-</style>
-
+    ul {
+      margin: 0;
+      padding-left: 18px;
+    }
+  </style>
 </head>
-<body>
-  <header>
-    <h1>Deepthi Yekkanti</h1>
-    <p>Backend Developer | Python • SQL • FastAPI | Building clean APIs & real-world projects</p>
-    <p>
-      <a href="mailto:yekkantideepthi@gmail.com">Email</a> •
-      <a href="https://www.linkedin.com/in/deepthiyekkanti">LinkedIn</a> •
-      <a href="https://github.com/deepthiyekkanti">GitHub</a> •
-      <a href="https://leetcode.com/u/yekkantideepthi/">LeetCode</a>
-    </p>
-  </header>
 
-  <section id="about">
-  <h2>About Me</h2>
+<body>
+
+<header>
+  <h1>Deepthi Yekkanti</h1>
+  <p>Backend Developer | Python • SQL • FastAPI</p>
+  <p>
+    <a href="mailto:yekkantideepthi@gmail.com">Email</a> •
+    <a href="https://www.linkedin.com/in/deepthiyekkanti">LinkedIn</a> •
+    <a href="https://github.com/deepthiyekkanti">GitHub</a> •
+    <a href="https://leetcode.com/u/yekkantideepthi/">LeetCode</a>
+  </p>
+</header>
+
+<section id="about">
+  <h2>About</h2>
   <div class="info-card">
-    <p>👋 Hi! I’m Deepthi — a backend developer who loves building scalable APIs, mastering FastAPI, and solving DSA problems daily.</p>
-    <p>With 4+ years of experience across Accenture and NTT DATA, I work at the intersection of backend systems, debugging, and data validation. I recently completed my Master’s in Data Science at the University of Oklahoma.</p>
+    <p>
+      Backend developer with experience building secure, scalable REST APIs using Python and FastAPI.
+      I have 4+ years of industry experience across Accenture and NTT DATA, working closely with backend systems,
+      APIs, data workflows, and debugging production issues.
+    </p>
+    <p>
+      Recently completed my Master’s in Data Science at the University of Oklahoma and currently focused on
+      strengthening backend engineering and system design fundamentals.
+    </p>
   </div>
 </section>
 
-
- <section id="skills">
+<section id="skills">
   <h2>Skills</h2>
   <div class="info-card">
     <ul>
-      <li>⚙️ <strong>Backend:</strong> FastAPI, Flask, REST APIs</li>
-      <li>💻 <strong>Programming:</strong> Python, SQL, Java (Basic)</li>
-      <li>🗄️ <strong>Databases:</strong> PostgreSQL, MySQL</li>
-      <li>📦 <strong>Data Engineering:</strong> ETL, Pipelines, AWS S3</li>
-      <li>🛠️ <strong>Tools:</strong> Docker, Git, VS Code, Postman</li>
-      <li>🌳 <strong>DSA:</strong> Trees, Binary Search, Recursion, Patterns (LeetCode 100+)</li>
+      <li><strong>Backend:</strong> FastAPI, Flask, REST APIs</li>
+      <li><strong>Languages:</strong> Python, SQL, Java (Basic)</li>
+      <li><strong>Databases:</strong> PostgreSQL, MySQL</li>
+      <li><strong>Tools:</strong> Docker, Git, Postman, VS Code</li>
+      <li><strong>Concepts:</strong> JWT Authentication, Pagination, Rate Limiting, DSA Patterns</li>
     </ul>
   </div>
 </section>
 
-
-  <section id="projects">
+<section id="projects">
   <h2>Projects</h2>
 
   <div class="project-card">
-    <h3>
-      <img class="icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/fastapi/fastapi-original.svg"/>
-      Task Manager API (FastAPI)
-    </h3>
-    <div>
-      <span class="badge">FastAPI</span>
-      <span class="badge">Python</span>
-      <span class="badge">Pydantic</span>
-    </div>
-    <p>Full CRUD backend API built with FastAPI and Pydantic. Supports task creation, retrieval, update, and deletion with clean routing and data validation.</p>
-    <a class="button" href="https://github.com/deepthiyekkanti/task_manager_api" target="_blank">View on GitHub</a>
+    <h3>Task Manager API</h3>
+    <div class="tech">FastAPI • Python • PostgreSQL • JWT • SQLAlchemy</div>
+    <p>
+      Designed and built a RESTful Task Management API with clean separation between routes,
+      services, and data models. Implemented JWT-based authentication with refresh tokens,
+      pagination, filtering, search, and rate limiting on auth endpoints.
+    </p>
+    <a class="button" href="https://github.com/deepthiyekkanti/task_manager_api" target="_blank">
+      View on GitHub
+    </a>
   </div>
 
   <div class="project-card">
-    <h3>
-      <img class="icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg"/>
-      ETL Data Sync Pipeline
-    </h3>
-    <div>
-      <span class="badge">Python</span>
-      <span class="badge">MySQL</span>
-      <span class="badge">AWS S3</span>
-      <span class="badge">ETL</span>
-    </div>
-    <p>Automated ETL pipeline that syncs MySQL data to AWS S3 with retry logic, batching, and consistency checks.</p>
-    <a class="button" href="#" target="_blank">View Project</a>
-  </div>
-
-  <div class="project-card">
-    <h3>
-      <img class="icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redis/redis-original.svg"/>
-      URL Shortener Service
-    </h3>
-    <div>
-      <span class="badge">FastAPI</span>
-      <span class="badge">Redis</span>
-      <span class="badge">Python</span>
-    </div>
-    <p>High-performance URL shortener with Redis caching, rate limiting, analytics tracking, and FastAPI backend.</p>
-    <a class="button" href="#" target="_blank">View Project</a>
+    <h3>URL Shortener Service</h3>
+    <div class="tech">Flask • Redis • PostgreSQL • Python</div>
+    <p>
+      Backend service for generating and resolving short URLs with Redis-based caching
+      and rate limiting. Designed for fast lookups and basic analytics.
+    </p>
+    <div class="status">Status: In Progress</div>
   </div>
 
 </section>
 
-
- <section id="certifications">
-  <h2>Certifications</h2>
-  <div class="info-card">
-    <ul>
-      <li>📘 Supervised Machine Learning — Coursera</li>
-      <li>📝 SQL (Advanced) — HackerRank</li>
-      <li>🐍 Python (Basic) — HackerRank</li>
-      <li>📊 Google Data Analytics</li>
-    </ul>
-  </div>
-</section>
-
-
- <section id="contact">
+<section id="contact">
   <h2>Contact</h2>
   <div class="info-card">
-    <p>📩 Email: <a href="mailto:yekkantideepthi@gmail.com">yekkantideepthi@gmail.com</a></p>
-    <p>🔗 LinkedIn: <a href="https://www.linkedin.com/in/deepthiyekkanti">linkedin.com/in/deepthiyekkanti</a></p>
-    <p>💻 GitHub: <a href="https://github.com/deepthiyekkanti">github.com/deepthiyekkanti</a></p>
-    <p>🧩 LeetCode: <a href="https://leetcode.com/u/yekkantideepthi/">leetcode.com/u/yekkantideepthi/</a></p>
+    <p>Email: <a href="mailto:yekkantideepthi@gmail.com">yekkantideepthi@gmail.com</a></p>
+    <p>LinkedIn: <a href="https://www.linkedin.com/in/deepthiyekkanti">linkedin.com/in/deepthiyekkanti</a></p>
+    <p>GitHub: <a href="https://github.com/deepthiyekkanti">github.com/deepthiyekkanti</a></p>
+    <p>LeetCode: <a href="https://leetcode.com/u/yekkantideepthi/">leetcode.com/u/yekkantideepthi</a></p>
   </div>
 </section>
+
+</body>
+</html>
