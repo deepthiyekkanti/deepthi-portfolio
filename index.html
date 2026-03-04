@@ -138,9 +138,10 @@
     <ul>
       <li><strong>Backend:</strong> FastAPI, Flask, REST APIs</li>
       <li><strong>Languages:</strong> Python, SQL, Java (Basic)</li>
-      <li><strong>Databases:</strong> PostgreSQL, MySQL</li>
+      <li><strong>Databases:</strong> PostgreSQL, MySQL, Redis</li>
       <li><strong>Tools:</strong> Docker, Git, Postman, VS Code</li>
-      <li><strong>Concepts:</strong> JWT Authentication, Pagination, Rate Limiting, DSA Patterns</li>
+      <li><strong>Security:</strong> JWT Authentication, Refresh Token Rotation</li>
+      <li><strong>Concepts:</strong> Pagination, Rate Limiting, API Design, Backend Architecture</li>
     </ul>
   </div>
 </section>
@@ -150,7 +151,7 @@
 
  <div class="project-card">
   <h3>Task Manager API</h3>
-  <div class="tech">FastAPI • Python • PostgreSQL • SQLAlchemy • JWT • SlowAPI</div>
+  <div class="tech">FastAPI • PostgreSQL • SQLAlchemy • JWT • SlowAPI</div>
 
   <ul>
     <li>Designed and built a production-style REST API using FastAPI and PostgreSQL with a layered architecture (routers → services → models).</li>
@@ -158,6 +159,8 @@
     <li>Developed task APIs supporting CRUD operations with pagination, filtering, search, and sorting.</li>
     <li>Enforced secure authorization with user-scoped resource access preventing IDOR vulnerabilities.</li>
     <li>Implemented rate limiting middleware to protect endpoints from abuse and improve API stability.</li>
+    <li>Validated API behavior through authentication, authorization, and edge-case test scenarios including expired tokens, unauthorized access, and pagination limits.</li>
+    <li>Designed input validation and structured responses using Pydantic schemas.</li>
   </ul>
 
   <a class="button" href="https://github.com/deepthiyekkanti/task-manager-api" target="_blank">
