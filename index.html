@@ -60,12 +60,16 @@
       box-shadow: 0 2px 6px rgba(0,0,0,0.08);
       border-left: 4px solid #0366d6;
     }
-
+    
+    .project-card ul {
+      margin-top: 8px;
+      padding-left: 18px;
+    }
+    
     .project-card h3 {
       margin-top: 0;
       margin-bottom: 8px;
     }
-
     .tech {
       font-size: 13px;
       color: #555;
@@ -144,18 +148,22 @@
 <section id="projects">
   <h2>Projects</h2>
 
-  <div class="project-card">
-    <h3>Task Manager API</h3>
-    <div class="tech">FastAPI • Python • PostgreSQL • JWT • SQLAlchemy</div>
-    <p>
-      Designed and built a RESTful Task Management API with clean separation between routes,
-      services, and data models. Implemented JWT-based authentication with refresh tokens,
-      pagination, filtering, search, and rate limiting on auth endpoints.
-    </p>
-    <a class="button" href="https://github.com/deepthiyekkanti/task_manager_api" target="_blank">
-      View on GitHub
-    </a>
-  </div>
+ <div class="project-card">
+  <h3>Task Manager API</h3>
+  <div class="tech">FastAPI • Python • PostgreSQL • SQLAlchemy • JWT • SlowAPI</div>
+
+  <ul>
+    <li>Designed and built a production-style REST API using FastAPI and PostgreSQL with a layered architecture (routers → services → models).</li>
+    <li>Implemented JWT authentication with refresh token rotation and token revocation for secure session management.</li>
+    <li>Developed task APIs supporting CRUD operations with pagination, filtering, search, and sorting.</li>
+    <li>Enforced secure authorization with user-scoped resource access preventing IDOR vulnerabilities.</li>
+    <li>Implemented rate limiting middleware to protect endpoints from abuse and improve API stability.</li>
+  </ul>
+
+  <a class="button" href="https://github.com/deepthiyekkanti/task-manager-api" target="_blank">
+    View on GitHub
+  </a>
+</div>
 
   <div class="project-card">
     <h3>URL Shortener Service</h3>
